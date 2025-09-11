@@ -11,7 +11,7 @@ void explainVector(){
     //Simple vector of integers.
     vector<int> v;
     v.push_back(6);
-    v.emplace_back(9); //It does in-place object creation and more efficient than pusback.
+    v.emplace_back(9); // It constructs the element in-place.It does in-place object creation and more efficient than pusback.
     for(int x: v){
         cout << x<<" "; //Prints 6 9.
     }

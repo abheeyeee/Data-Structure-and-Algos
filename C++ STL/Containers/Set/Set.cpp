@@ -29,7 +29,8 @@ void explainSet(){
     //empty() and swap() are same as those of others
 
     // {1,2,3,4}
-    auto it = st.find(4); 
+    auto it = st.find(4); // returns an Iterator which points to the 4
+    auto it = st.find(6); // if an element is not in the SET it will always return set.end(), which means an iterator which points to the next after the end.
 }
 
 int main(){
