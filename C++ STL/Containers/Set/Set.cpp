@@ -32,15 +32,15 @@ void explainSet(){
     //empty() and swap() are same as those of others
 
     // {1,2,3,4}
-    auto it = st.find(4); // returns an Iterator which points to the 4
-    auto it = st.find(12); // if an element is not in the SET it will always return set.end(), which means an iterator which points to the next after the end.
+    auto it3 = st.find(4); // returns an Iterator which points to the 4
+    auto it4 = st.find(12); // if an element is not in the SET it will always return set.end(), which means an iterator which points to the next after the end.
     
     st.erase(4); // erases 4, takes logarithmic time
 
     int cnt = st.count(2); // as it contains only unique elements, it will only have either 1 or 0 occurence of any element when counted.
     
-    auto it = st.find(3);
-    st.erase(it); // it takes constant time
+    auto it5 = st.find(3);
+    st.erase(it5); // it takes constant time
 
     auto it1 = st.find(2);
     auto it2 = st.find(5);
@@ -65,9 +65,9 @@ void explainSet(){
     */
 
     // This is the syntax 
-    auto it = st.lower_bound(2); // → points to 2 // Returns an iterator to the first element that is not less than x (≥ x).
-    auto it = st.upper_bound(2); // → points to 3
-    auto it = st.upper_bound(3); // → points to 4  // Returns an iterator to the first element strictly greater than x (> x).
+    auto it6 = st.lower_bound(2); // → points to 2 // Returns an iterator to the first element that is not less than x (≥ x).
+    auto it7 = st.upper_bound(2); // → points to 3
+    auto it8 = st.upper_bound(3); // → points to 4  // Returns an iterator to the first element strictly greater than x (> x).
 
     // st.lower_bound(10) → st.end() (since 10 is not there, and no element ≥ 10)
     // st.upper_bound(7) → st.end() (since no element > 7)
