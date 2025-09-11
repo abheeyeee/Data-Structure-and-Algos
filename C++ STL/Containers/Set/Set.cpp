@@ -7,7 +7,7 @@ using namespace std;
     Automatic sorting: Elements are always kept sorted.
     Underlying structure: Usually implemented as a balanced binary search tree (like Red-Black Tree).
 */
-
+// every operation happens in (log n).
 void explainSet(){
     // Use set when you need a collection of unique, sorted elements with efficient search, insert, and delete operations.
     set<int>st;
